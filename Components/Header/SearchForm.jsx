@@ -19,24 +19,24 @@ function SearchForm({searchStatus,setSearchStatus}) {
 export default SearchForm;
 
 const SLayout = styled.div`
-        position: relative;
         
+        position: relative;
+        z-index:9999;
     .search{
         position: absolute;
         top: 0;
         left: 0;
-        width: 100vw;
+        width: 100%;
         height:100vh;
         background-color: rgb(48, 48, 50);
         color: white;
         z-index: 10;
         transform: translateY(-100%);
-        transition: all 0.5s ease;
+        transition: all 0.25s ease;
         direction: rtl;
-        
-        padding-right:2rem;
+        padding-right:2.5rem;
         > * {
-            margin-top: 2rem;
+            margin-top: 1.5rem;
         }
         img{
             width: 2rem;
@@ -53,7 +53,7 @@ const SLayout = styled.div`
             margin-top: 10rem;
         }
         h1,input{
-            margin-right: 11rem;
+            margin-right: 13%;
         }
         input{
             width:70%;
@@ -61,6 +61,7 @@ const SLayout = styled.div`
             background-color:  rgb(48, 48, 50);
             border: 1px solid white;
             font-size: 1.5rem;
+            padding-right: 1rem;
         }
         input:focus{
             color: white;
@@ -72,15 +73,9 @@ const SLayout = styled.div`
         opacity: 1;
     }
     @media only screen and (max-width: 700px){
-        .search{
-            
-            padding-right:0.5rem;
-        }
-        input{
-            width: 20%;
-        }
+        padding-right: 0.25rem;
         h1,input{
-            margin-left: 2rem;
+            margin-left: 10rem;
         }
     }
 `;
