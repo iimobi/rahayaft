@@ -31,11 +31,11 @@ const Container = styled.div`
     color: white;
     direction: rtl;
     align-items: center;
-    
+    padding: 0 4rem 0 4rem ;
     img{
         width: 1.2rem;
         height: 1.2rem;
-        margin: 0.25rem 4rem 0.5rem 0;
+        margin: 0.25rem 0 0.5rem 0;
         cursor: pointer;
     }
     span{
@@ -53,11 +53,10 @@ const Container = styled.div`
     @media only screen and (max-width: 700px) {
        width: 100%;
        height: 5rem;
-       display: grid;
+       flex-wrap: wrap-reverse;
        justify-content: center;
         div{
             border: none;
         }
     }
-   
 `;

@@ -13,7 +13,7 @@ export default Logo;
 
 const LogoBox = styled.div`
     position: absolute;
-    z-index: 999;
+    z-index: 99;
     top: 0;
     left: 4rem;
     width: 14rem;
