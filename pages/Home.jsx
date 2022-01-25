@@ -1,18 +1,15 @@
-import AboutUs from "../Components/AboutUs";
-import BestServices from "../Components/BestServices";
 import Header from "../Components/Header/Header";
-import UsServices from "../Components/UsServices"
-import MyVideo from "../Components/MyVideo";
+import Footer from "../Components/Footer/Footer";
+import HomePage from "../Components/Homepage/HomePage";
+import AboutPage from "../Components/AboutPage/AboutPage";
 const Home = () => {
    
     return ( 
         <>
             <Header/>
-            <UsServices/>
-            <AboutUs/>
-            <BestServices/>
-            <MyVideo/>
             
+            <HomePage/>
+            <Footer/>
         </>
      );
 }

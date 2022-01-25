@@ -24,17 +24,17 @@ export default MyVideo;
 
 const Video = styled.div`
   width: 100%;
-  height: 75vh;
+  height: auto;
   background-image: url("/promo-video.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding: 5.5rem 0 6rem 10rem;
   padding-left: 10rem;
-  padding: 3rem 0 0 10rem;
   color: white;
   display: grid;
   align-content: center;
-
+  align-items: center;
   p {
     width: 28rem;
     line-height: 5rem;
@@ -100,6 +100,7 @@ const Video = styled.div`
     opacity: 1;
     transition: all 5s ease;
   }
+  
   @media only screen and (max-width: 1100px) {
     padding-left: 3rem;
   }

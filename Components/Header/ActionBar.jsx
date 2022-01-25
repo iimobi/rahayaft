@@ -25,13 +25,13 @@ export default ActionBar;
 
 const Container = styled.div`
     width: 100%;
-    height: 3.2rem;
+    height: 3rem;
     background-color: rgb(48, 48, 50);
     display: flex;
     color: white;
     direction: rtl;
     align-items: center;
-    padding: 0 4rem 0 4rem ;
+    padding: 0 4.5rem 0 4rem ;
     img{
         width: 1.2rem;
         height: 1.2rem;

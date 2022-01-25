@@ -25,7 +25,7 @@ import Image from 'next/image';
             "delay": 2500,
             "disableOnInteraction": false
           }} pagination={{
-            "clickable": true
+            "clickable": true,
           }} navigation={true} className="mySwiper">
             <SwiperSlide>
               <Image src="/banner-1.jpg" 
@@ -76,7 +76,7 @@ import Image from 'next/image';
   export default Slider;
 
   const MySlider = styled.div`
-      height: 90vh;
+    height: 90vh;
     .swiper {
       width: 100%;
       height: 100%;
@@ -140,7 +140,7 @@ import Image from 'next/image';
       border-bottom: 1px solid #d4d4d4;
       direction: rtl;
       display: flex;
-      padding: 0 2.5rem 0 2.5rem;
+      justify-content: center;
 
       div{
           width: 20rem;
@@ -152,7 +152,7 @@ import Image from 'next/image';
           justify-content: center;
           justify-items: center;
           cursor: pointer;
-          ::selection{
+          :active{
             color: white;
             background-color: rgb(48, 48, 50);
           }

@@ -32,21 +32,24 @@ export default AboutUs;
 
 const About = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-image: url("/Computers.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   direction: rtl;
   display: grid;
   align-items: center;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 990px) {
     justify-content: center;
   }
 `;
 const Container = styled.div`
   width: 33rem;
-  height: 28rem;
+  height: auto;
   background-color: rgb(48, 48, 50);
-  margin-right: 6%;
+  margin: 5rem 12%  5rem 0;
+  margin-right: 12%;
   border-radius: 0.25rem;
   padding: 3rem;
   color: #d3d2d2;
@@ -89,12 +92,20 @@ const Container = styled.div`
     line-height: 1.5rem;
     margin-top: 1rem;
   }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 1200px) {
+      margin-right: 5%;
+      width: 29rem;
+  }
+  @media only screen and (max-width: 990px) {
+    margin-right: 0;
+    width: 45rem ;
+  }
+  @media only screen and (max-width: 770px) {
+    width: 33rem;
     margin-right: 0;
   }
-  @media only screen and (max-width: 555px) {
+  @media only screen and (max-width: 575px) {
     width: 29rem;
-    height: 28rem;
   }
 `;
 const Items = styled.div`
@@ -105,9 +116,19 @@ const Items = styled.div`
   margin: 3rem auto 9% auto;
   p {
     width: 12rem;
+   
   }
   img {
     width: 1.1rem;
     height: 1.1rem;
+  }
+  @media only screen and (max-width: 1200px) {
+    grid-template-columns: 1rem 1fr;
+    grid-template-rows: auto;
+    row-gap: 0.75rem;
+  }
+  @media only screen and (max-width: 990px) {
+    grid-template-columns: 1rem 10rem 1rem 10rem;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
   }
 `;

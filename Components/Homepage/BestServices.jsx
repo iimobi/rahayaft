@@ -77,27 +77,28 @@ export default BestServices;
 
 const Service = styled.div`
   width: 100%;
-  height: 108vh;
+  height: 88vh;
   direction: rtl;
   display: flex;
   align-items: center;
-  padding: 8% 6% 8% 0;
-@media only screen and (max-width: 1278px) {
-  height: 125vh;
+  justify-content: center;
+  column-gap: 8rem;
+@media only screen and (max-width: 1285px) {
+  height: 110vh;
 }
-@media only screen and (max-width: 985px) {
-  height: 200vh;
+@media only screen and (max-width: 1150px) {
+  column-gap: 5rem;
+}
+@media only screen and (max-width: 995px) {
+  height: 160vh;
   flex-direction: column;
-  padding: 0;
-}
-@media only screen and (max-width: 600px) {
-  height: 215vh;
 }
 `;
 const Text = styled.div`
-  width: 60%;
+  width: 40rem;
   height: 100%;
-  align-content: start;
+  display: grid;
+  align-content: center;
   p:nth-child(1) {
     font-size: 1rem;
     color: rgb(102, 102, 102);
@@ -126,33 +127,56 @@ const Text = styled.div`
     }
   }
   p:nth-child(4) {
-    line-height: 1.5rem;
+    width: 40rem;
+    line-height: 1.75rem;
   }
   p:nth-child(5) {
-    width: 100%;
-    line-height: 1.5rem;
-    margin: 1rem 0 3rem 0;
+    width: 40rem;
+    line-height: 1.75rem;
+    margin: 1rem 0 2rem 0;
   }
-  @media only screen and (max-width: 1200px) {
-    width:45%;
+  @media only screen and (max-width: 1285px) {
+    width:35rem;
+  }
+  @media only screen and (max-width: 1150px) {
+    width: 34rem;
     p:nth-child(4) {
-      width: 90%;
-  }
-    p:nth-child(5){
-      width: 90%;
+      width: 34rem ;
     }
-}
-@media only screen and (max-width: 1200px) {
-    width:65%;
-}
-@media only screen and (max-width: 985px){
-  width: 100% ;
-  padding: 9% 12% 0 6% ;
-  align-items: center;
-}
-@media only screen and (max-width: 700px){
-  padding-right: 5%;
-}
+    p:nth-child(5) {
+      width: 34rem;
+    }
+  }
+  @media only screen and (max-width: 995px) {
+    width: 44rem;
+    height: 30rem !important;
+    display: block;
+    p:nth-child(4) {
+      width: 44rem ;
+    }
+    p:nth-child(5) {
+      width: 44rem;
+      margin-bottom: 3rem;
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    width: 35rem;
+    p:nth-child(4) {
+      width: 35rem ;
+    }
+    p:nth-child(5) {
+      width: 35rem;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    width: 92%;
+    p:nth-child(4) {
+      width: 100% ;
+    }
+    p:nth-child(5) {
+      width: 100%;
+    }
+  }
 `;
 
 const Performance = styled.div`
@@ -168,9 +192,12 @@ const Performance = styled.div`
     margin-left: 0.75rem;
     
   }
-  @media only screen and (max-width: 985px) {
-    width: 100%;
+  @media only screen and (max-width: 995px) {
+    width: 44rem;
     margin: 0;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 92%;
   }
 `;
 
@@ -192,25 +219,31 @@ const TextIcon = styled.div`
       font-size: 2.5rem;
      }
   }
-  @media only screen and (max-width: 1100px) {
-      margin-left: 1rem;
+  @media only screen and (max-width: 1150px) {
+      margin-left: 0.75rem;
   }
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 995px) {
+    margin-left: 4rem;
+  }
+  @media only screen and (max-width: 770px) {
+    margin-left: 0.5rem;
+  }
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
-    margin-left: 5rem;
+    margin-left: 20%;
   }
 `;
 
 const Rank = styled.div`
   display: grid;
-  row-gap: 0.5rem;
-  padding: 8% 8% 0 0;
-  width: 45%;
+  row-gap: 0.75rem;
+  width: 26rem;
+  margin-top: 6rem;
   input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
     background: #e4e4e4;
-    width: 85%;
+    width: 100%;
     border-radius: 1rem;
     height: 1.1rem;
     margin-bottom: 1.5rem;
@@ -222,29 +255,23 @@ const Rank = styled.div`
     border-radius: 8px;
     background-color: gray;
   }
-  @media only screen and (max-width: 1200px) {
-      padding: 7% 0 0 0 ; 
+  @media only screen and (max-width: 1285px) {
+      width: 23rem;
   }
-  @media only screen and (max-width: 985px) {
-      width: 100%;
-      padding: 3rem 7rem 10rem 0;
-      input[type="range"]{
-        width: 38rem ;
-      }
+  @media only screen and (max-width: 1150px) {
+      margin-top: 4rem;
+      width: 20rem;
   }
-  @media only screen and (max-width: 800px) {
-      padding-right: 6rem;
-      input[type="range"]{
-        width: 34rem ;
-      }
+  @media only screen and (max-width: 995px) {
+    width: 43rem;
+    margin-top: 0;
   }
-  @media only screen and (max-width: 700px) {
-      padding-right: 3.5rem;
+  @media only screen and (max-width: 770px) {
+    width: 35rem;
+    margin-top: 5rem;
   }
-  @media only screen and (max-width: 630px) {
-      padding-right: 1.5rem;
-      input[type="range"]{
-        width: 27.5rem ;
-      }
+  @media only screen and (max-width: 600px) {
+    width: 92%;
+    margin-top: 9rem;
   }
 `;

@@ -26,16 +26,16 @@ const SLayout = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background-color: rgb(48, 48, 50);
     color: white;
     z-index: 10;
     transform: translateY(-100%);
     transition: all 0.25s ease;
     direction: rtl;
-    padding-right: 2.5rem;
+    padding-right: 2rem;
     > * {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
     }
     img {
       width: 2rem;
@@ -53,15 +53,15 @@ const SLayout = styled.div`
     }
     h1,
     input {
-      margin-right: 13%;
+      margin-right: 20%;
     }
     input {
-      width: 70%;
-      height: 7.5rem;
+      width: 59%;
+      height:8rem;
       background-color: rgb(48, 48, 50);
       border: 1px solid white;
       font-size: 1.5rem;
-      padding-right: 1rem;
+      padding-right: 2.5rem;
     }
     input:focus {
       color: white;
@@ -73,10 +73,11 @@ const SLayout = styled.div`
     opacity: 1;
   }
   @media only screen and (max-width: 700px) {
-    padding-right: 0.25rem;
-    h1,
+    h1,input{
+      margin-right: 0.5rem !important;
+    }
     input {
-      margin-left: 10rem;
+      width: 90% !important;
     }
   }
 `;

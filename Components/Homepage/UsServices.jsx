@@ -60,14 +60,16 @@ export default UsServices;
 
 const Services = styled.div`
   width: 100%;
-  height: 145vh;
+  height: auto;
   display: grid;
   align-content: center;
   direction: rtl;
   row-gap: 2rem;
+  padding-top: 11rem;
+  
   @media only screen and (max-width: 990px) {
     height: auto;
-    padding-top: 4rem;
+    padding-top: 10rem;
   }
 `;
 
@@ -81,7 +83,7 @@ const Text = styled.div`
     font-size: 1rem;
     color: rgb(102, 102, 102);
     font-weight: bold;
-    margin-top: 5rem;
+
   }
   p:nth-child(2) {
     font-size: 2rem;
@@ -121,6 +123,7 @@ const BoxList = styled.div`
     justify-content: center;
     align-content: start;
     justify-items: center;
+    margin-bottom: 6rem;
     p {
       width: 100%;
       height: 5rem;
@@ -145,6 +148,7 @@ const BoxList = styled.div`
     :hover {
       img {
         filter: brightness(70%);
+        transition: all 0.25s ease;
       }
     }
     button {
@@ -160,6 +164,7 @@ const BoxList = styled.div`
     }
     button:hover {
       background-color: rgb(232, 68, 68);
+      transition: all 0.25s ease;
     }
     div {
       width: 4rem;
@@ -201,7 +206,6 @@ const BoxList = styled.div`
     .listItems{
       width: 29rem;
       height: 32rem;
-      margin-bottom: 4rem;
       button{
         margin-top: 3rem ;
       }
